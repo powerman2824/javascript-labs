@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+</head>
+<body>
+  <h1>
+    <script>
+// Enter your Name or leave Blank under userName
+let userName = '';
+userName.length > 0 ? document.write(`Hello, ${userName}!`) : document.write(`Hello, there!`);
+// Enter a question for the Magic 8 Ball to answer
+let userQuestion = '';
+// The block of code below takes your userName and userQuestion and generates output to the console
+if (userName.length > 0  && userQuestion.length > 0) {
+  document.write(`${userName} wants to know: ${userQuestion} What will be the answer Magic 8-Ball?`);
+} else if (userName.length > 0  && userQuestion.length === 0) {
+  document.write(`Please ask Magic 8 Ball your most important questions!`);
+} else if (userName.length === 0  && userQuestion.length > 0) {
+  document.write(`User wants to know: ${userQuestion} What will be the answer Magic 8-Ball?`);
+} else {
+  document.write(`Please ask Magic 8 Ball your most important questions!`);
+}
+// The block of code below takes randomNumber and generates output to the console
+// let randomNumber is assigned Math.floor & Math.round. Which creates a random number from 0-8
+if (userName.length > 0  && userQuestion.length > 0) {
+  let randomNumber = Math.floor(Math.random() * 8);
+  if (randomNumber == 0) {
+    document.write('It is certain');
+  } else if (randomNumber == 1) {
+    document.write('It is decidedly so');
+  } else if (randomNumber == 2) {
+    document.write('Reply hazy try again');
+  } else if (randomNumber == 3) {
+    document.write('Cannot predict now');
+  } else if (randomNumber == 4) {
+    document.write('Do not count on it');
+  } else if (randomNumber == 5) {
+    document.write('My sources say no');
+  } else if (randomNumber == 6) {
+    document.write('Outlook not so good');
+  } else if (randomNumber == 7) {
+    document.write('Signs point to yes');
+  } else {
+    document.write('This Broke!!!');
+  }
+} else if (userName.length === 0  && userQuestion.length > 0) {
+  let randomNumber = Math.floor(Math.random() * 8);
+  if (randomNumber == 0) {
+    document.write('It is certain');
+  } else if (randomNumber == 1) {
+    document.write('It is decidedly so');
+  } else if (randomNumber == 2) {
+    document.write('Reply hazy try again');
+  } else if (randomNumber == 3) {
+    document.write('Cannot predict now');
+  } else if (randomNumber == 4) {
+    document.write('Do not count on it');
+  } else if (randomNumber == 5) {
+    document.write('My sources say no');
+  } else if (randomNumber == 6) {
+    document.write('Outlook not so good');
+  } else if (randomNumber == 7) {
+    document.write('Signs point to yes');
+  } else {
+    document.write('This Broke!!!');
+  }
+} else {
+  ;
+}
+    </script>
+  </h1>
+    
+</body>
+</html>
