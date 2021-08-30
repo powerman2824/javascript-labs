@@ -117,7 +117,7 @@ const playGame = () => {
     document.getElementById("result").innerHTML = theOutcome;
   }
   else if (outcome === 6) {
-    theOutcome = `You did it🤣 and won. The computer silly choose ✂️${computerChoice}😤 and you choose ${userChoice}☄️`;
+    theOutcome = `You did it🤣 and won. The silly computer choose ✂️${computerChoice}😤 and you choose ${userChoice}☄️`;
     document.getElementById("result").innerHTML = theOutcome;
   }
   else if (outcome === 7) {
